@@ -4,7 +4,7 @@ var splide = new Splide(".splide", {
   arrows: false,
   breakpoints: {
     1199: {
-      perPage: 2,
+      perPage: 2.5,
     },
     767: {
       perPage: 1,
