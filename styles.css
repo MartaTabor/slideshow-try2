@@ -130,4 +130,11 @@ body {
   .splide {
     padding: 128px 0 32px 33px;
   }
+
+  .products-tile,
+  .splide__slide {
+    width: 270px;
+    padding: 32px 20px 32px 20px;
+  }
+}
 }
