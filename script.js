@@ -3,10 +3,10 @@ var splide = new Splide(".splide", {
   focus: 0,
   arrows: false,
   breakpoints: {
-    768: {
-      perPage: 2.5,
+    1199: {
+      perPage: 2,
     },
-    375: {
+    767: {
       perPage: 1,
     },
   },
