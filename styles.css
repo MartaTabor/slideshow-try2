@@ -372,6 +372,7 @@ html {
 
 .front-two {
   border: 1px solid var(--carrot-orange-color);
+  background-color: var(--white-color);
 }
 
 .front-three {
@@ -380,6 +381,7 @@ html {
 
 .front-four {
   border: 1px solid var(--carrot-orange-color);
+  background-color: var(--white-color);
 }
 
 .unique-img {
@@ -487,40 +489,48 @@ html {
   .unique-section {
     margin-top: 100px;
   }
-  .unique-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 32px;
+
+  .unique-title-wrapper {
+    margin-bottom: 50px;
   }
 
   .unique-h2 {
-    min-width: 411px;
     font-size: var(--title-font-size);
-    line-height: 28px;
-    letter-spacing: -0.72px;
+    margin-bottom: 28px;
+    width: 411px;
   }
 
   .unique-paragraph {
-    margin: 28px 0 52px 0;
     width: 486px;
-    height: 72px;
   }
 
-  .unique-list-component-one {
-    order: 1;
+  .unique-list {
+    position: relative;
   }
 
-  .unique-list-component-two {
-    order: 3;
+  .flip-card {
+    width: 336px;
+    position: absolute;
   }
 
-  .unique-list-component-three {
-    order: 4;
+  .card-one {
+    left: 32px;
+    top: 0;
   }
 
-  .unique-list-component-four {
-    order: 2;
+  .card-two {
+    left: 32px;
+    top: 302px;
+  }
+
+  .card-three {
+    left: 400px;
+    top: 302px;
+  }
+
+  .card-four {
+    left: 400px;
+    top: 0;
   }
 }
 
@@ -540,83 +550,29 @@ html {
 
   .unique-section {
     margin-top: 128px;
-  }
-  .unique-h2 {
-    min-width: 411px;
-    font-size: var(--title-font-size);
-    line-height: 28px;
-    letter-spacing: -0.72px;
-  }
-
-  .unique-paragraph {
-    margin: 28px 0 52px 0;
-    width: 486px;
-    height: 72px;
+    margin-bottom: 128px;
   }
 
   .unique-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     gap: 19px;
+    position: relative;
   }
 
-  .unique-list-component {
-    min-width: 270px;
-    height: 270px;
+  .flip-card {
+    width: 270px;
+    position: static;
+    overflow: hidden;
   }
 
-  .unique-list-component-one {
-    background: url(./images/unique-components/desktop-unique-chocolate-bar.png)
-        no-repeat,
-      var(--carrot-orange-color);
-    background-position: 50% 28px;
-    order: 1;
+  .unique-img {
+    margin-left: 0;
   }
 
-  .unique-list-component-two {
-    background: url(./images/unique-components/desktop-unique-milk.png)
-        no-repeat,
-      var(--white-color);
-    background-position: 50% 28px;
-    border: 1px solid var(--carrot-orange-color);
-    order: 2;
-  }
-
-  .unique-list-component-three {
-    background: url(../images/unique-components/desktop-unique-nut.png)
-        no-repeat,
-      var(--eerie-black-color);
-    background-position: 50% 28px;
-    order: 3;
-  }
-
-  .unique-list-component-four {
-    background: url(./images/unique-components/desktop-unique-chocolate-beans.png)
-        no-repeat,
-      var(--white-color);
-    background-position: 50% 28px;
-    border: 1px solid var(--carrot-orange-color);
-    order: 4;
-  }
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .unique-list-component-one {
-      background-image: url(./images/unique-components/mobile-unique-chocolate-bar@2x.png);
-    }
-
-    .unique-list-component-two {
-      background-image: url(./images/unique-components/mobile-unique-milk@2x.png);
-    }
-
-    .unique-list-component-three {
-      background-image: url(./images/unique-components/mobile-unique-nut@2x.png);
-    }
-
-    .unique-list-component-four {
-      background-image: url(./images/unique-components/mobile-unique-chocolate-beans@2x.png);
-    }
+  .flip-card-back {
+    padding: 20px;
+    overflow: hidden;
   }
 }
