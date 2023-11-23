@@ -132,10 +132,6 @@ html {
   margin: 0 auto;
 }
 
-.tile-wrapper img.splide__slide__container img {
-  margin-bottom: 8px;
-}
-
 .product-name {
   color: #111;
   font-size: 18px;
@@ -143,7 +139,7 @@ html {
   line-height: 1.33;
   letter-spacing: -0.023rem;
   text-transform: uppercase;
-  margin: 0;
+  margin-top: 8px;
 }
 
 .product-type {
@@ -325,20 +321,20 @@ html {
 .reviews-btn {
   margin-top: 50px;
   padding: 14px 40px;
+  font-size: var(--sub-title-font-size);
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
     margin: 0 auto;
-  }
+}
 
-  .reviews-slider.splide__list {
+.reviews-slider.splide__list {
   gap: 28px;
 }
 
 .tile-wrapper-rev.splide__slide__container {
   min-width: 360px;
 }
-
 }
